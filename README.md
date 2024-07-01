@@ -1,5 +1,10 @@
 Spring Boot application that demonstrates reading secrets from Hashicorp Vault and usage in application.
 
+## Setup
+Unzip _infrastructure.zip. This should create a new "_infrastructure" directory in the root directory.  
+Run `docker-compose up`.
+Start the application from InteliJ.
+
 ## Vault
 The vault is already preconfigured with some secrets. However, on every start/restart the vault must be unsealed by providing any 3 (out of 5) keys. The keys can be found in "keys.txt" file.  
 In order to login to vault and check the existing secrets go to `http://localhost:8200`. Choose token as auth method and provide the root token that can be found in "keys.txt".

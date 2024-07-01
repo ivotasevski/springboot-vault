@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    vault:
+      uri: http://localhost:8200
+      token: hvs.6DNNIeDKA3lrfWmJPH6Ud40A
+      kv:
+        enabled: true
+        # Will injects secrets from secret/mysecrets/first
+        backend: mysecrets
+        application-name: first
+
+# The following configuration will inject secrets from secret/kv/app1/high
+#        backend: kv
+#        application-name: app1/high
+
+  config:
+    import: vault://
