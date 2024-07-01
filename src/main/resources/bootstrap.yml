@@ -2,7 +2,7 @@ spring:
   cloud:
     vault:
       uri: http://localhost:8200
-      token: hvs.6DNNIeDKA3lrfWmJPH6Ud40A
+      token: 
       kv:
         enabled: true
         # Will injects secrets from secret/mysecrets/first
